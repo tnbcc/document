@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/posts', 'PostsController@index')->name('posts.index');
+
+
+//hasOne
+Route::get('/phone', 'PhonesController@index')->name('phones.index');

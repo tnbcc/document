@@ -73,5 +73,11 @@ class User extends Authenticatable
         return $this->roles()->detach($role);
     }
 
+    //用户是否有权限
+    public function hasPermission($permission)
+    {
+        return $this->isInRoles($permission->role);
+    }
+
 
 }

@@ -20,3 +20,8 @@ Route::get('/posts', 'PostsController@index')->name('posts.index');
 
 //hasOne
 Route::get('/phone', 'PhonesController@index')->name('phones.index');
+
+//belongsToMany
+Route::get('/roles', 'RolesController@index')->name('roles.index');
+
+Route::get('/roles/show', 'RolesController@show')->name('roles.show');

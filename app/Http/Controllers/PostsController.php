@@ -18,7 +18,7 @@ class PostsController extends Controller
             return $user;
         });
 
-        
+
         dd($users);
     }
 }

@@ -27,7 +27,10 @@ class PostsController extends Controller
        //all
         $arr = [1,2,3];
 
-        dd(collect($arr));
+        //dd(collect($arr));
+
+        //avg
+        dd(collect($arr)->avg());
 
     }
 }

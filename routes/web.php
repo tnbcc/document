@@ -27,3 +27,6 @@ Route::get('/roles', 'RolesController@index')->name('roles.index');
 Route::get('/roles/show', 'RolesController@show')->name('roles.show');
 
 Route::get('/comment', 'CommentsController@index')->name('comments.index');
+
+//collect
+Route::get('/collect', 'PostsController@getAll');

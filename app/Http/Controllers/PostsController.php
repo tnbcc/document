@@ -21,4 +21,13 @@ class PostsController extends Controller
 
         dd($users);
     }
+
+    public function getAll()
+    {
+       //all
+        $arr = [1,2,3];
+
+        dd(collect($arr));
+
+    }
 }

@@ -11,5 +11,6 @@ class DepartmentController extends Controller
     public function index(Request $request)
     {
         return DepartmentResource::collection(Department::where($request->all())->get());
+        
     }
 }

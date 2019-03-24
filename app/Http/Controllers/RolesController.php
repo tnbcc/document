@@ -1,5 +1,6 @@
 <?php
 
+
 namespace App\Http\Controllers;
 
 use App\Models\Role;
@@ -10,6 +11,7 @@ class RolesController extends Controller
 {
     public function index()
     {
+
         $roleId = Role::query()
             ->where('name', '=', '超级管理员')
             ->orWhere('name', '=', '运营')
